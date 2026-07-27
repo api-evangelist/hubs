@@ -1,7 +1,26 @@
 aid: hubs
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hubs.png
 name: hubs
-description: hubs is a company surfaced as a portfolio company of balderton-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Hubs, now operating as Protolabs Network and formerly known as 3D Hubs, is an
+  on-demand digital manufacturing platform founded in Amsterdam in 2013 and
+  acquired by Protolabs in 2021. It gives engineers and product teams instant
+  online quoting, automated design-for-manufacturing analysis, and access to a
+  vetted global network of more than 250 manufacturing partners for CNC
+  machining, 3D printing, sheet metal fabrication, and injection molding, from
+  low-volume prototyping through production-scale runs. Hubs was backed by
+  Balderton Capital prior to the Protolabs acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/hubs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Manufacturing
+- On-Demand Manufacturing
+- Digital Manufacturing
+- 3D Printing
+- CNC Machining
+- Injection Molding
+- Sheet Metal Fabrication
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,28 @@ maintainers:
 common:
 - type: Website
   url: https://www.hubs.com/
+- type: Documentation
+  url: https://www.hubs.com/help-center/
+- type: APIReference
+  url: https://3dhubs.docs.apiary.io/
+- type: GettingStarted
+  url: https://www.hubs.com/help-center/how-to-get-a-quote/
+- type: Support
+  url: https://www.hubs.com/help-center/
+- type: Blog
+  url: https://www.hubs.com/blog/
+- type: SignUp
+  url: https://www.hubs.com/manufacture/sign-up
+- type: Login
+  url: https://www.hubs.com/manufacture/login
+- type: TermsOfService
+  url: https://www.hubs.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.hubs.com/privacy-policy/
+- type: DomainSecurity
+  url: security/hubs-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/* on the hubs.com host
+host: https://www.hubs.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+notes: No /.well-known/ discovery documents, security.txt, OIDC/OAuth metadata,
+  API catalog, ai-plugin manifest, or llms.txt are published. Recorded absence is
+  valid data; no WellKnown/SecurityTxt pointer is wired because nothing was found.
